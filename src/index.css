@@ -1,0 +1,250 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+nav{
+  background-color: aquamarine;
+  max-width: 800px;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+nav h1{
+  font-size: 40px;
+  color: red;
+}
+nav input{
+    width: 250px;
+    height: 40px;
+    border-radius: 8px;
+    border: solid 1px white;
+    border-width: 0ch;
+}
+nav div a{
+    font-size: 25px;
+    text-decoration: none;
+    background-color: red;
+    margin: 0px 8px;
+    padding: 8px;
+    border-radius: 8px;
+}
+a{
+  padding: 5px;
+  color: white;
+  margin: 0px 10px;
+  text-decoration: none;
+}
+
+.home-content{
+  background-color: rgba(58, 48, 48, 0.011);
+  max-width: 800px;
+  margin: auto;
+  padding: 15px;
+  background-color: honeydew;
+}
+.movie{
+  margin: 10px 0px;
+  padding: 10px;
+  font-size: small;
+  color: black;
+}
+
+.movie:hover{
+
+  background-color: aquamarine;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.22);
+  transition: 0.3s;
+  transform: scale(1.1);
+  border-radius: 8px;
+  
+}
+#movie-title{
+  color: #E50914;
+  font-size: xx-large;
+  text-align: center;
+}
+#show-content{
+  background-color: red;
+  width: 120px;
+  height: 30px;
+  font-size: 18px;
+  border-radius: 8px;
+  border-width: 0ch;
+  color: white;
+  font-weight: bold;
+  box-shadow: 10px 10px 20px gray;
+  
+}
+#show-content:hover{
+  background-color: black;
+}
+#showmore{
+ background-color: transparent;
+ border: none;
+ font-weight: 500;
+cursor: pointer;
+font-size: large;
+font-family: arial;
+}
+#showmore:hover{
+  color: black;
+  font-weight: bold;
+}
+.loader{
+  border-top: solid 3px crimson;
+  border-right: solid 3px crimson;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation-name: loader;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  margin: auto;
+  margin-top: 220px;
+} 
+
+ @keyframes loader
+{
+   0%{
+    transform: rotate(0deg);
+   
+   }
+   100%{
+    transform: rotate(360deg);
+   }
+
+} 
+/* 
+.loader{
+background-color: red;
+  animation-name: loader;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes loader
+{
+   0%{
+      height: 2px;
+      width: 0px;
+   
+   }
+   100%{
+    height: 2px;
+    width: 400px;
+   }
+
+} */
+
+
+ .addmovie{
+  background-color: cadetblue;
+  max-width: 800px;
+  margin: 20px auto;
+ }
+
+ .addmovie h1{
+  color: black;
+  font-size: 35px;
+  margin-bottom: 20px;
+ }
+ .addmovie form{
+  background-color: white;
+  border: solid  2px aquamarine ;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  margin: 10px 0px;
+ }
+
+ .addmovie form div{
+  display: grid;
+  grid-template-columns: 150px 300px;
+  row-gap: 10px;
+  align-items: center;
+ }
+ .addmovie form div label{
+  font-size: 23px;
+ }
+ .addmovie form div input{
+  font-size: 20px;
+  width: 450px;
+  height: 45px;
+  border-radius: 8px;
+  border: solid 1px #E50914;
+ }
+ .addmovie form div input:focus {
+  border: solid 1px crimson;
+  outline: solid 2px rgba(220, 20, 60, 0.128);
+ }
+
+.addmovie form input[type=submit]
+{
+  background-color: #E50914;
+  width: 150px;
+  height: 40px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: solid 1px crimson;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.addmovie form input[type=submit]:active
+{
+  background-color: blue;
+  border: none;
+  transition: 0.2sec;
+}
+
+.MOVIE-DETAIL button{
+  background-color: #E50914;
+  font-size: 20px;
+  color: white;
+  border-radius: 15px;
+  border-width: 0ch;
+  font-weight: 50;
+  font-family: sans-serif;
+  margin-left: 20px;
+  height: 40px;
+  width: 100px;
+
+}
+.MOVIE-DETAIL button:hover{
+  background-color: #f58f94;
+}
+
+nav input{
+  display: flex;
+  margin-left: 10px;
+}
+#searchbutton{
+  border-radius: 8px;
+  width: 70px;
+  height: 40px;
+  border-width: 0ch;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.pagenotfound{
+font-size: 25px;
+margin-left: 580px;
+margin-top: 220px;
+color: #E50914;
+}
+
+img{
+  width: 700px;
+  height: 550px;
+}
